@@ -262,7 +262,7 @@ function processTextElement(inSrc, txt) {
         off=attrs[i];
         url=txt.getLinkUrl(off);
       }
-      pOut=pOut.substring(0, off)+'['+pOut.substring(off, lastOff)+']('+url+')'+pOut.substring(lastOff);
+      pOut=pOut.substring(0, off)+'<a href="'+url+'" target="_blank">'+pOut.substring(off, lastOff)+'</a>'+pOut.substring(lastOff);
     } else if (font) {
       if (!inSrc && font===font.COURIER_NEW) {
         while (i>=1 && txt.getFontFamily(attrs[i-1]) && txt.getFontFamily(attrs[i-1])===font.COURIER_NEW) {
