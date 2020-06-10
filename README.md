@@ -1,3 +1,5 @@
+Modification of original: URL formatting changed for Complex Data Lab Blog (https://complexdatalabmcgill.github.io/)
+
 gdocs2md
 ========
 
